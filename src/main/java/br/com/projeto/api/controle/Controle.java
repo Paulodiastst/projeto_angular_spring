@@ -26,5 +26,10 @@ public class Controle {
         return acao.save(c);
     }
 
+    @DeleteMapping("/{codigo}")
+    public void remover(@PathVariable long codigo){
+        acao.deleteById(codigo);
+    }
+
 }
 
